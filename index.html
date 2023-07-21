@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tasks</title>
+</head>
+<body>
+  <script>
+
+
+
+    const numbers = [1, 2, 3, 4, 5];
+    
+    // Using map() to double each element
+    
+    
+    const doubledNumbers = numbers.map(function(num) {
+      return num * 2;
+    });
+    
+    console.log(doubledNumbers);
+    
+    // Output: [2, 4, 6, 8, 10]
+    
+    
+    
+    
+    
+    
+    const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    
+    
+    // Using filter() to get odd numbers
+    
+    
+    const oddNumbers = numbers.filter(function(num) {
+      return num % 2 !== 0;
+    });
+    
+    // Using map() to cube each odd number
+    
+    const cubedOddNumbers = oddNumbers.map(function(num) {
+      return num ** 3;
+    });
+    
+    console.log(cubedOddNumbers);
+    
+    // Output: [1, 27, 125, 343, 729]
+    
+    
+    
+    
+    const numbers = [1, 2, 3, 4, 5];
+    
+    // Using reduce() to calculate the product and sum
+    
+    const product = numbers.reduce(function(acc, curr) {
+      return acc * curr;
+    }, 1); 
+    
+    
+    
+    const sum = numbers.reduce(function(acc, curr) {
+      return acc + curr;
+    }, 0);
+    
+    
+    console.log(product);
+    
+    // Output: 120
+    
+    console.log(sum);
+    
+    // Output: 15
+    
+      </script>
+</body>
+</html>
